@@ -1,5 +1,5 @@
-import puppeteer from "puppeteer";
-import * as Cheerio from "cheerio";
+import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
+import * as Cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
 import type { Context } from "../main.ts";
 
 /**

@@ -65,6 +65,9 @@ export default async function (ctx: Context) {
 其中 `ctx.state` 是 `Feed` 类型（可在 `main.ts` 中找到），代表了需要返回的 RSS
 信息。`main.ts` 中的中间件会将 `ctx.state` 渲染成 XML 格式并返回给 RSS 客户端
 
+随后在 `main.ts` 文件中加载对应的路由到 router，因 deno deploy 暂不支持 dynamic import 所以这一步需要手动。
+[TODO] 可以使用脚本完成这个动作
+
 ### 抓取网页
 
 对于抓取网页 HTML 文本，您可以使用 deno 内建的 `fetch` API。例如

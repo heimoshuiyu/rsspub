@@ -1,5 +1,5 @@
 import type { Context } from "../main.ts";
-import * as Cheerio from "cheerio";
+import * as Cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
 
 /**
  * 佛山信息协会通知公告
