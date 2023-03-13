@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev": "deno run --watch -A main.ts",
+    "test": "deno test --watch -A test.ts",
+    "start": "deno run -A main.ts",
+    "doc": "deno run --allow-write --allow-read doc.ts && deno doc .doc_gen.ts --json > .doc_gen.json && deno run -A doc-website.tsx"
+  },
+  "imports": {
+    "cheerio": "https://esm.sh/cheerio@1.0.0-rc.12",
+    "puppeteer": "https://deno.land/x/puppeteer@16.2.0/mod.ts"
+  }
+}
